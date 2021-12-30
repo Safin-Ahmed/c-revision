@@ -1,14 +1,21 @@
-#include<stdio.h>
-int main () 
+#include <stdio.h>
+int main()
 {
-   int numbers[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-   int rows = sizeof(numbers) / sizeof(numbers[0]);
-   int columns = sizeof(numbers[0]) / sizeof(numbers[0][0]);
-   printf("%d\n%d", rows, columns);
-   for(int i = 0; i < rows; i++){
-       printf("\n");
-       for(int j = 0; j < columns; j++){
-           printf("%d", numbers[i][j]);
-       }
-   }
+    // 2D array = an array, where each element is an entire array useful if you need a matrix, grid or table of data
+    // int numbers[2][3] = {
+    //     {1, 2, 3},
+    //     {4, 5, 6}
+
+    // };
+
+    int numbers[2][3];
+    numbers[0][0] = 1;
+    numbers[0][1] = 2;
+    numbers[0][2] = 3;
+    numbers[1][0] = 4;
+    numbers[1][1] = 5;
+    numbers[1][2] = 6;
+
+    printf("%d", numbers[0][0]);
+    return 0;
 }
